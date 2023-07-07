@@ -18,6 +18,19 @@ namespace SnakeLadderProblem
 			int newPosition = rnd.Next(1, 7);
 			return newPosition;
 		}
+
+		public int AvailOptions()
+		{
+
+            Random rnd = new Random();
+            int option = rnd.Next(-1, 2);
+			//-1 --> Snake
+			//0 ---> Stays at same positon
+			//1 ---> Chooses Ladder
+			return option;
+			
+
+        }
 	}
 }
 
