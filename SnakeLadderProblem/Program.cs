@@ -14,12 +14,14 @@ class Program
         int nextMove = u1.RollDice();
 
         //UC4
+        int dicePlayed = 0;
         Console.WriteLine($"The Current positon before while is {u1.GetPosition()}");
         while(u1.GetPosition()<100)
         {
             
             int current = u1.GetPosition();
             int diceValue = u1.RollDice();
+            dicePlayed++;
             int option = u1.AvailOptions();
             if(option == -1)
             {
@@ -50,7 +52,7 @@ class Program
             
         }
 
-        
+        Console.WriteLine($"The number of times the dice was rolled to win the game {dicePlayed}");
 
 
     }
