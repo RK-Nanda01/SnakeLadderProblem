@@ -12,6 +12,16 @@ namespace SnakeLadderProblem
 			currentPosition = 0;
 		}
 
+		public int GetPosition()
+		{
+			return this.currentPosition;
+		}
+
+		public void SetPosition(int x)
+		{
+			this.currentPosition = x;
+		}
+
 		public int RollDice()
 		{
 			Random rnd = new Random();
