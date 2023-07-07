@@ -14,7 +14,6 @@ class Program
         int nextMove = u1.RollDice();
 
         //UC4
-        
         Console.WriteLine($"The Current positon before while is {u1.GetPosition()}");
         while(u1.GetPosition()<100)
         {
