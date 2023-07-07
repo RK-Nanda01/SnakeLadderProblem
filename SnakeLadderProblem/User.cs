@@ -11,6 +11,13 @@ namespace SnakeLadderProblem
 			startPosition = 0;
 			currentPosition = 0;
 		}
+
+		public int RollDice()
+		{
+			Random rnd = new Random();
+			int newPosition = rnd.Next(1, 7);
+			return newPosition;
+		}
 	}
 }
 
