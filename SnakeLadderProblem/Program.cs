@@ -12,7 +12,7 @@ class Program
 
         //UC2
         int nextMove = u1.RollDice();
-        Console.WriteLine($"next move is {nextMove}");
+        
         
     }
 }
