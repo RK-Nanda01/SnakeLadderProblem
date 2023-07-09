@@ -41,6 +41,31 @@ namespace SnakeLadderProblem
 			
 
         }
+
+		public void Move(int diceValue, int option)
+		{
+			int current = this.GetPosition();
+            if (option == 1) //chooses ladder
+            {
+                current += diceValue;
+                if (current > 100)
+                {
+                    current -= diceValue;
+                }
+            }
+
+            else if (option == -1)
+            {
+                current -= diceValue;
+                if (current < 0)
+                {
+                    current = 0;
+                }
+            }
+
+            this.SetPosition(current);
+        }
+
 	}
 }
 
